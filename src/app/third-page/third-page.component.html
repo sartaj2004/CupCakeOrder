@@ -1,1 +1,19 @@
-<p>third-page works!</p>
+<div class="container">
+  <div class="top">
+    <button class="top-button" mat-icon-button (click)="goToSecondPage()">
+      <mat-icon aria-label="Back">arrow_back</mat-icon>
+    </button>
+    <p class="text1">Order Summary</p>
+  </div>
+
+  <div class="summary">
+    <br>
+    <p style="font-weight: bold">Number of Cupcakes: {{ quantity }}</p><br>
+    <p style="font-weight: bold">Flavor: {{ selectedFlavor }}</p><br>
+    <p style="font-weight: bold">Subtotal: $ {{ subtotal }}</p>
+  </div>
+  <div style="padding-top: 70px" class="buttons">
+    <button (click)="goToFirstPage()">Cancel</button>
+    <button (click)="sendOrder()">Send Order</button>
+  </div>
+</div>
