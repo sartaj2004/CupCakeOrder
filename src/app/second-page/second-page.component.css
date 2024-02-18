@@ -1,0 +1,77 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+  background-color: lightpink;
+  margin-left: 30%;
+  border: 2px solid deeppink;
+  width:40%;
+  height: 70%;
+}
+.options {
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 250px;
+}
+
+.radio-label {
+  padding-bottom: 20px;
+  display: block; /* Make label elements block-level to occupy full width */
+  margin-bottom: 10px; /* Add spacing between each radio button */
+  font-size: 16px; /* Customize font size */
+}
+
+.top-button{
+  position: relative;
+  width: 30px;
+  background-color: lightpink;
+  border: none;
+}
+
+.top{
+  display: flex;
+  border-bottom: 1px solid deeppink;
+
+}
+.text1{
+  padding-top: 10px;
+  margin-left: 200px;
+  font-size:15px;
+  font-weight: bolder;
+}
+
+imput{
+  padding-bottom: 20px;
+  color: deeppink;
+}
+
+.options{
+  padding-top: 15px;
+}
+.options select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+label{
+  padding-bottom: 15px;
+}
+
+.subtotal p {
+  font-size: 18px;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: deeppink;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: hotpink;
+}
+

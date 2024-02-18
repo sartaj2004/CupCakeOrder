@@ -1,1 +1,33 @@
-<p>second-page works!</p>
+<div class="container">
+  <div class="top">
+    <button class="top-button" mat-icon-button (click)="goToFirstPage()">
+      <mat-icon aria-label="Back">arrow_back</mat-icon>
+    </button>
+    <p class="text1">Select Cupcake Flavor</p>
+  </div>
+
+  <div class="options">
+    <label>
+      <input type="radio" name="flavor" value="vanilla" [(ngModel)]="selectedFlavor"> Vanilla
+    </label><br><br>
+    <label>
+      <input type="radio" name="flavor" value="chocolate" [(ngModel)]="selectedFlavor"> Chocolate
+    </label><br><br>
+    <label>
+      <input type="radio" name="flavor" value="Red Velvet" [(ngModel)]="selectedFlavor"> Red Velvet
+    </label><br><br>
+    <label>
+      <input type="radio" name="flavor" value="Salted Caramel" [(ngModel)]="selectedFlavor"> Salted Caramel
+    </label><br><br>
+    <label >
+      <input type="radio" name="flavor" value="Coffee" [(ngModel)]="selectedFlavor"> Coffee
+    </label><br>
+  </div>
+  <div style="padding-top: 20px; margin-bottom: 30px" class="subtotal">
+    <p style="font-weight: bold">Subtotal: $ {{ subtotal }}</p>
+  </div>
+  <div class="buttons">
+    <button (click)="goToFirstPage()">Cancel</button>
+    <button (click)="goToThirdPage()">Next</button>
+  </div>
+</div>
